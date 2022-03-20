@@ -18,11 +18,11 @@
   <center>
     <h1 class="btn btn-info heading">Object Detection</h1>
     <h3 class="btn btn-danger" id="status"></h3>
+    <h3 class="btn btn-warning" id="noob"></h3>
 
   </center>
 
   <script>
-img = "";
 status = "";
 objects = [];
 
@@ -31,6 +31,7 @@ function setup(){
     canvas.center();
     objectDetector = ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML = "status: Detecting objects"
+    
 }
 
 function preload(){
